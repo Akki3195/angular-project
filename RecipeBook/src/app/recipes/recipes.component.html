@@ -1,0 +1,19 @@
+<h1>In the recipes componenet</h1>
+<div class="row">
+  <div class="col-md-5">
+    <!-- <app-recipes-list (recipeWasSelected)="selectedRecipe = $event"></app-recipes-list> -->
+    <app-recipes-list></app-recipes-list>
+  </div>
+  
+  <div class="col-md-7">
+    <!-- <app-recipes-detail
+    *ngIf = "selectedRecipe; else infoText"
+    [recipeDetail] = "selectedRecipe"></app-recipes-detail>
+    <ng-template #infoText>
+      <p>Please select a recipe first!!</p>
+    </ng-template> -->
+
+    <!-- Using Routing -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
